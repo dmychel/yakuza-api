@@ -3,7 +3,7 @@ export async function callAPI(value) {
   try {
     const res = await fetch(`${BASE_URL}/${value}`);
     const data = await res.json();
-    console.log(data);
+    return data;
   } catch (err) {
     console.log(err);
     alert(err);
