@@ -5,14 +5,12 @@ function CodeSnippet() {
         <pre>
           {`	
 {
-    "item": {	
-        _id	      "660b01fa4aa15727d67398b5"
-        item:	      1
-        category:     "character"
-        name:	      "Kiryu"
-        description   "Kazuma Kiryu (桐生 一馬, Kiryū Kazuma), also known as..."
-        images:	      [..]
-    }
+  _id:          "660b01fa4aa15727d67398b5"
+  category:     "character"
+  description   "Kazuma Kiryu (桐生 一馬, Kiryū Kazuma), also known as..."
+  images:       [..]
+  item:	        1
+  name:	        "Kiryu"
 }
 `}
         </pre>
