@@ -1,0 +1,14 @@
+.code_snippet {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.code_block {
+  width: 90%;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #44475a;
+  color: white;
+  overflow-y: scroll;
+}
