@@ -5,10 +5,10 @@
 }
 
 .code_block {
-  width: 90%;
-  padding: 8px;
+  width: 50%;
   border-radius: 5px;
   background-color: #44475a;
   color: white;
   overflow-y: scroll;
+  padding: 1em;
 }

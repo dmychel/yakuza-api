@@ -1,0 +1,53 @@
+.example {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.character_profile {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 70%;
+  padding: 2em;
+  border-radius: 1em;
+  color: #635d45;
+}
+
+.profile_background {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.profile_background img {
+  border-radius: 1em;
+  height: 100%;
+  width: 100%;
+}
+
+.profile_header {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 30%;
+}
+
+.profile_header img {
+  height: 100%;
+  width: auto;
+}
+
+.profile_info {
+  display: flex;
+  border-left: 2px solid red;
+  flex-direction: column;
+  padding: 1em;
+  gap: 2em;
+}
