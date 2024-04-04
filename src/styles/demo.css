@@ -2,13 +2,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1em;
   width: 100%;
 }
 
-.demo h2 {
+.demo_title {
   width: 100%;
-  margin-bottom: 1em;
 }
+
+.demo_info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
 
 .code_snippet {
   display: flex;
@@ -17,10 +25,11 @@
 }
 
 .code_block {
-  width: 100%;
+  width: 80%;
+  font-family: monospace;
   border-radius: 5px;
   background-color: #44475a;
   color: white;
   overflow-y: scroll;
-  padding: 1em;
+  padding: 2em;
 }

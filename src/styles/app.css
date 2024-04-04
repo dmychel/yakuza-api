@@ -6,10 +6,7 @@
 body {
   background-color: #091a28;
   color: white;
-}
-
-section {
-  padding: 1em 10%;
+  font-size: 1.25rem;
 }
 
 header {
@@ -22,13 +19,20 @@ header {
 main {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   height: 100%;
-  width: 100vw;
+  width: 100%;
 }
 
 .intro {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  padding: 2em;
+  gap: 0.5em;
+}
+
+section {
+  width: 90%;
+  margin: 2em 0;
 }
