@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { callAPI } from "../api/fetch";
 import { useState } from "react";
 
-import "/src/styles/example.css";
+import '/src/styles/example.css'
 
 function Example() {
   const [loading, setLoading] = useState(true);
