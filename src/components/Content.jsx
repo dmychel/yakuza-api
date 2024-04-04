@@ -1,6 +1,5 @@
 import Demo from "./Demo";
 import Intro from "./Intro";
-import "/src/styles/code-block.css";
 import "/src/styles/content.css";
 
 function Content() {
