@@ -10,6 +10,9 @@ function App() {
         </p>
       </header>
       <main>
+        <div className="background">
+          <img src="/assets/purchase_bg.jpg" alt="" />
+        </div>
         <Content />
       </main>
     </>
