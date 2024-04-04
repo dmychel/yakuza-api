@@ -3,26 +3,47 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: "Yakuza";
+  src: local("edosz"),
+    url("/src/fonts//edosz.ttf") format("truetype");
+}
+
+
 body {
   background-color: #091a28;
-  color: white;
+  color: black;
   font-size: 1.25rem;
+  font-family: 'Yakuza';
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #c3c19b;
   padding: 1em 2em;
 }
 
 main {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
   width: 100%;
+}
+
+.background img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .intro {
@@ -35,4 +56,8 @@ main {
 section {
   width: 90%;
   margin: 2em 0;
+}
+
+.drop_shadow {
+  filter: drop-shadow(0 0 0.75rem crimson);
 }
