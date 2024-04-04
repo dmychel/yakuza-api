@@ -21,6 +21,3 @@ function CodeSnippet() {
 
 export default CodeSnippet;
 
-{
-
-}
