@@ -19,12 +19,12 @@ function Example() {
       {loading ? (
         "Loading..."
       ) : (
-        <div className="character_profile">
+        <div className="character_profile drop_shadow">
           <div className="profile_background">
             <img src="/assets/back.jpg" alt="" />
           </div>
-          <div className="profile_header">
-            <img src={object.images[0]} alt="Kiryu Image" />
+          <div className="profile_header" style={{ backgroundImage: "url('/assets/features_bg.jpg')" }}>
+            <img src={object.images[0]} alt="Kiryu Image" className="character_img" />
           </div>
           <div className="profile_info">
             <h2 className="character_name">{object.name}</h2>
