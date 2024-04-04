@@ -5,7 +5,6 @@ function App() {
   return (
     <>
       <header>
-        <h1>Yakuza API</h1>
         <p>
           By <span>Dylon Crowley-Perez</span>
         </p>
