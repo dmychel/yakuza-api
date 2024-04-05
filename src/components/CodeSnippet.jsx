@@ -1,23 +1,39 @@
-function CodeSnippet() {
+import PropTypes from "prop-types";
+
+function CodeSnippet({ loading, object }) {
   return (
     <section className="code_snippet">
       <div className="code_block">
-        <pre>
-          {`fetch("https://rest-api-jvtz.onrender.com/characters/1")
- 
- {           
-  _id:          "660b01fa4aa15727d67398b5"
-  category:     "character"
-  description   "Kazuma Kiryu (Kiryū Kazuma), also known as Joryu (Jōryū), and Taichi Suzuki (Suzuki Taichi), is the former primary protagonist of the Like a Dragon (formerly Yakuza) series. He is an agent of the Daidoji Faction, the former fourth chairman of the Tojo Clan, the former manager of Morning Glory Orphanage, and a former taxi driver for Nagasu Taxi."
-  images:       [..]
-  item:	        1
-  name:	        "Kazama Kiryu"
- }`}
-        </pre>
+        {loading ? (
+          "Loading..."
+        ) : (
+          <>
+            <div className="left_json">
+              <span>_id:</span>
+              <span>category:</span>
+              <span>description:</span>
+              <span>images:</span>
+              <span>item:</span>
+              <span>name:</span>
+            </div>
+            <div className="right_json">
+              <span>{object._id}</span>
+              <span>&quot;{object.category}&quot;</span>
+              <span>&quot;{object.description}&quot;</span>
+              <span>{object.images}</span>
+              <span>{object.item}</span>
+              <span>&quot;{object.name}&quot;</span>
+            </div>
+          </>
+        )}
       </div>
     </section>
   );
 }
 
-export default CodeSnippet;
+CodeSnippet.propTypes = {
+  loading: PropTypes.bool,
+  object: PropTypes.object,
+};
 
+export default CodeSnippet;
