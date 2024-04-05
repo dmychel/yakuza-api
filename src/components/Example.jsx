@@ -8,7 +8,7 @@ function Example() {
   const [loading, setLoading] = useState(true);
   const [object, setObject] = useState(null);
   useEffect(() => {
-    callAPI("characters/1").then((result) => {
+    callAPI("character/1").then((result) => {
       setLoading(false);
       setObject(result);
     });
