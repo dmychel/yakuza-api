@@ -1,24 +1,40 @@
+import { useState, useEffect } from "react";
+import { callAPI } from "../api/fetch";
 import CodeSnippet from "./CodeSnippet";
 import Example from "./Example";
-import '/src/styles/demo.css'
+import "/src/styles/demo.css";
 
 function Demo() {
-    return (
-        <section className="demo">
-            <div className="demo_title">
-                <h2>Demo</h2>
-            </div>
-            <div className="demo_info">
-                <p>
-                    Below is a quick demo of what you can do with this API and the kind of assets we provide. If you need help using this API read the documenation here.</p>
-                <p>
-                    All the assets and character info in this info card are from the API via HTTP fetch request.
-                </p>
-            </div>
-            <Example />
-            <CodeSnippet />
-        </section>
-    )
+  const [loading, setLoading] = useState(true);
+  const [object, setObject] = useState(null);
+
+  useEffect(() => {
+    callAPI("character/1").then((result) => {
+      setLoading(false);
+      setObject(result);
+    });
+  }, []);
+
+  return (
+    <section className="demo">
+      <div className="demo_title">
+        <h2>Demo</h2>
+      </div>
+      <div className="demo_info">
+        <p>
+          Below is a quick demo of what you can do with this API and the kind of
+          assets we provide. If you need help using this API read the
+          documenation here.
+        </p>
+        <p>
+          All the assets and character info in this info card are from the API
+          via HTTP fetch request.
+        </p>
+      </div>
+      <Example loading={loading} object={object} />
+      <CodeSnippet loading={loading} object={object} />
+    </section>
+  );
 }
 
-export default Demo
+export default Demo;
