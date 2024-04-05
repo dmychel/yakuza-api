@@ -1,19 +1,8 @@
-import { useEffect } from "react";
-import { callAPI } from "../api/fetch";
-import { useState } from "react";
+import PropTypes from "prop-types";
 
-import '/src/styles/example.css'
+import "/src/styles/example.css";
 
-function Example() {
-  const [loading, setLoading] = useState(true);
-  const [object, setObject] = useState(null);
-  useEffect(() => {
-    callAPI("character/1").then((result) => {
-      setLoading(false);
-      setObject(result);
-    });
-  }, []);
-
+function Example({ loading, object }) {
   return (
     <section className="example">
       {loading ? (
@@ -26,7 +15,10 @@ function Example() {
           </div>
 
           {/* image */}
-          <div className="profile_header" style={{ backgroundImage: "url('/assets/features_bg.jpg')" }}>
+          <div
+            className="profile_header"
+            style={{ backgroundImage: "url('/assets/features_bg.jpg')" }}
+          >
             <img src={object.images[0]} alt={object.name} />
           </div>
 
@@ -43,5 +35,10 @@ function Example() {
     </section>
   );
 }
+
+Example.propTypes = {
+  loading: PropTypes.bool,
+  object: PropTypes.object,
+};
 
 export default Example;
