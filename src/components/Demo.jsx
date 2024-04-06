@@ -28,12 +28,12 @@ function Demo() {
       </div>
       <div className="demo_info">
         <p>
-          Below is a quick demo of what you can do with this API and the kind of
-          assets we provide. If you need help using this API read the
+          Below is a quick demo of what you can do with the YakuzaAPI and the kind of
+          assets we provide. If you need help using the YakuzaAPI, read the
           documenation here.
         </p>
         <p>
-          All the assets and character info in this info card are from the API
+          All the assets and character info are provided from the YakuzaAPI
           via HTTP fetch request.
         </p>
       </div>
