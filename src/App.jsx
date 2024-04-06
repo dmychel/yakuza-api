@@ -8,7 +8,7 @@ import Error from "./routes/Error";
 
 // css
 import "/src/styles/app.css";
-
+import Roadmap from "./routes/Roadmap";
 
 function App() {
   return (
@@ -24,8 +24,9 @@ function App() {
           <img src="/assets/purchase_bg.jpg" alt="" />
         </div>
         <Routes>
-          <Route path='/' element={<Index />}></Route>
-          <Route path='/docs' element={<Docs />}></Route>
+          <Route path="/" element={<Index />}></Route>
+          <Route path="/docs" element={<Docs />}></Route>
+          <Route path="/roadmap" element={<Roadmap />}></Route>
           <Route path="*" element={<Error />}></Route>
         </Routes>
       </main>
