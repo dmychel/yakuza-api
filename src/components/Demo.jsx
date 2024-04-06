@@ -15,7 +15,7 @@ function Demo() {
   const [object, setObject] = useState(null);
 
   useEffect(() => {
-    callAPI("character/1").then((result) => {
+    callAPI("1").then((result) => {
       setLoading(false);
       setObject(result);
     });
@@ -23,7 +23,9 @@ function Demo() {
 
   function handleSubmit(e, value) {
     e.preventDefault()
-    console.log(value)
+    callAPI(value).then((result) => {
+      setObject(result)
+    })
   }
 
   return (
