@@ -1,7 +1,12 @@
+import { Link } from "react-router-dom";
+
 function Error() {
-    return (
-        "Error 404"
-    )
+  return (
+    <section className="error">
+      <h2>Looks like this page doesn&apos;t exist</h2>
+      <Link to="/">Go Back</Link>
+    </section>
+  );
 }
 
-export default Error
+export default Error;
