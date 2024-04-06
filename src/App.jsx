@@ -14,14 +14,16 @@ function App() {
   return (
     <BrowserRouter>
       <header>
+        <div className="header_background">
+          <img src="/assets/back.jpg" alt="" />
+        </div>
         <p>
           By <span>Dylon Crowley-Perez</span>
         </p>
       </header>
-
       <main>
         <div className="background">
-          <img src="/assets/purchase_bg.jpg" alt="" />
+          <img src="/assets/cast-bg.png" alt="" />
         </div>
         <Routes>
           <Route path="/" element={<Index />}></Route>
