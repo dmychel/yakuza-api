@@ -5,16 +5,14 @@
 
 @font-face {
   font-family: "Yakuza";
-  src: local("edosz"),
-    url("/src/fonts//edosz.ttf") format("truetype");
+  src: local("edosz"), url("/src/fonts//edosz.ttf") format("truetype");
 }
-
 
 body {
   background-color: #091a28;
   color: black;
   font-size: 1.25rem;
-  font-family: 'Yakuza';
+  font-family: "Yakuza";
 }
 
 header {
@@ -51,6 +49,7 @@ main {
   flex-direction: column;
   width: 100%;
   gap: 0.5em;
+  font-size: 2rem;
 }
 
 section {
