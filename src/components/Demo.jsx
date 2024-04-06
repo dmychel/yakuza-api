@@ -3,6 +3,7 @@ import { callAPI } from "../api/fetch";
 import CodeSnippet from "./CodeSnippet";
 import Example from "./Example";
 import "/src/styles/demo.css";
+import FetchForm from "./FetchForm";
 
 function Demo() {
   const [loading, setLoading] = useState(true);
@@ -31,6 +32,7 @@ function Demo() {
           via HTTP fetch request.
         </p>
       </div>
+      <FetchForm />
       <Example loading={loading} object={object} />
       <CodeSnippet loading={loading} object={object} />
     </section>
