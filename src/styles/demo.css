@@ -19,7 +19,9 @@
 
 .code_snippet {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  gap: 1em;
   width: 100%;
 }
 
@@ -28,7 +30,7 @@
   width: 80%;
   font-family: monospace;
   border-radius: 5px;
-  background-color: #44475a;
+  background-color: black;
   color: white;
   overflow-y: scroll;
   padding: 2em;
@@ -46,8 +48,10 @@
 
 .left_json {
   width: 40%;
+  color: rgb(0, 132, 255);
 }
 
 .right_json {
   width: 60%;
+  color: #FF007F
 }
