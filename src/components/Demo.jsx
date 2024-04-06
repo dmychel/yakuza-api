@@ -23,6 +23,10 @@ function Demo() {
 
   function handleSubmit(e, value) {
     e.preventDefault()
+    if (value > 23) {
+      alert('Currenlty there are only 23 characters in the data base. We are working on adding more :)')
+      return
+    }
     callAPI(value).then((result) => {
       setObject(result)
     })
