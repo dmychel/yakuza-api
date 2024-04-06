@@ -28,7 +28,6 @@ function App() {
           <Route path='/docs' element={<Docs />}></Route>
           <Route path="*" element={<Error />}></Route>
         </Routes>
-
       </main>
     </BrowserRouter>
   );
