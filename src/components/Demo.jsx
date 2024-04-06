@@ -16,6 +16,11 @@ function Demo() {
     });
   }, []);
 
+  function handleSubmit(e, value) {
+    e.preventDefault()
+    console.log(value)
+  }
+
   return (
     <section className="demo">
       <div className="demo_title">
@@ -32,7 +37,7 @@ function Demo() {
           via HTTP fetch request.
         </p>
       </div>
-      <FetchForm />
+      <FetchForm handleSubmit={handleSubmit} />
       <Example loading={loading} object={object} />
       <CodeSnippet loading={loading} object={object} />
     </section>
