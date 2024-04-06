@@ -36,7 +36,7 @@
   width: 60%;
   font-family: monospace;
   border-radius: 5px;
-  background-color: black;
+  background-color: #141414;
   color: white;
   overflow-y: scroll;
 }
