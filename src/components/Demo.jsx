@@ -1,9 +1,14 @@
+// functions
 import { useState, useEffect } from "react";
 import { callAPI } from "../api/fetch";
+
+// components
 import CodeSnippet from "./CodeSnippet";
 import Example from "./Example";
-import "/src/styles/demo.css";
 import FetchForm from "./FetchForm";
+
+// css
+import "/src/styles/demo.css";
 
 function Demo() {
   const [loading, setLoading] = useState(true);
