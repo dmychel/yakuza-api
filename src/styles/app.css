@@ -8,64 +8,132 @@
   src: local("edosz"), url("/src/fonts//edosz.ttf") format("truetype");
 }
 
-body {
-  background-color: #091a28;
-  color: black;
-  font-size: 1.25rem;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #c3c19b;
-  padding: 1em 2em;
-}
-
-main {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  height: 100vh;
   width: 100%;
 }
 
 .background img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
   height: 100%;
   width: 100%;
   object-fit: cover;
-  object-position: center;
-  filter: brightness(90%)
+  filter: grayscale();
 }
 
-.intro {
+body {
+  height: 100vh;
+  overflow-y: hidden;
+  color: white;
+}
+
+header {
+  position: relative;
+  padding: 1em;
+  color: white;
+}
+
+.header_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.header_background img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transform: scaleX(-1);
+  filter: invert(100);
+}
+
+main {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  gap: 0.5em;
-  font-size: 2rem;
-  font-family: "Yakuza";
-}
-
-.intro h1 {
-  font-size: 3rem;
-  color: white;
-  -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: black;
 }
 
 section {
-  width: 90%;
-  margin: 2em 0;
+  border: 1px solid;
+  padding: 5%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  font-size: 1.5rem;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+.intro {
+  font-family: "Yakuza";
+  -webkit-text-stroke: 0.5px black;
+}
+
+.intro h1 {
+  color: crimson;
+  -webkit-text-stroke: 0.75px black;
+  font-size: 3rem;
+}
+
+/* API example */
+.character_profile {
+  height: 300px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.profile_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.profile_background img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  filter: invert(100%);
+}
+
+.profile_header {
+  width: 30%;
+  height: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.seperator {
+  padding: 1px;
+  background-color: crimson;
+  border-radius: 5px;
+  height: 90%;
+}
+
+.profile_info {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 60%;
 }
 
 .drop_shadow {
-  filter: drop-shadow(0 0 0.75rem crimson);
+  filter: drop-shadow(0 15px 1rem rgba(49, 49, 49, 0.868));
 }
