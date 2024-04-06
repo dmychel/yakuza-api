@@ -34,7 +34,7 @@ function Demo() {
         </p>
         <p>
           All the assets and character info are provided from the YakuzaAPI
-          via HTTP fetch request.
+          via HTTP GET request.
         </p>
       </div>
       <FetchForm handleSubmit={handleSubmit} />
