@@ -1,5 +1,6 @@
 // functions
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { callAPI } from "../api/fetch";
 
 // components
@@ -40,7 +41,7 @@ function Demo() {
         <p>
           Below is a quick demo of what you can do with the YakuzaAPI and the
           kind of assets we provide. If you need help using the YakuzaAPI, read
-          the documenation here.
+          the <Link to="/docs">documenation here.</Link>
         </p>
         <p>
           All the assets and character info are provided from the YakuzaAPI via
