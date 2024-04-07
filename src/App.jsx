@@ -23,7 +23,7 @@ function App() {
       </header>
       <main>
         <div className="background">
-          <img src="/assets/cast-bg.png" alt="" />
+          <img src="/assets/kiryu-disco.jpg" alt="" />
         </div>
         <Routes>
           <Route path="/" element={<Index />}></Route>
