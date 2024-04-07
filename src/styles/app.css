@@ -87,6 +87,30 @@ section {
   font-size: 3rem;
 }
 
+/* demo */
+.demo_info {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+/* docs */
+.docs {
+  height: 100%;
+}
+
+.get {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border: 1px solid;
+}
+
+.endpoint span {
+  background-color: gray;
+  padding: 1px;
+}
+
 /* API example */
 .character_profile {
   height: 300px;
