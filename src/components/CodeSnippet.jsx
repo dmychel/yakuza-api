@@ -4,7 +4,7 @@ function CodeSnippet({ loading, object }) {
   return (
     <section className="code_snippet">
       <h4>JSON response</h4>
-      <div className="code_block">
+      <div className="code_block drop_shadow">
         {loading ? (
           "Loading..."
         ) : (
@@ -21,10 +21,8 @@ function CodeSnippet({ loading, object }) {
               <span>{object._id}</span>
               <span>&quot;{object.category}&quot;</span>
               <span>&quot;{object.description}&quot;</span>
-              <span>[{object.images.map((img) => (
-                img + ', '
-              ))}]</span>
-              <span style={{ color: 'green' }}>{object.item}</span>
+              <span>[{object.images.map((img) => img + ", ")}]</span>
+              <span style={{ color: "#66FF00" }}>{object.item}</span>
               <span>&quot;{object.name}&quot;</span>
             </div>
           </>
