@@ -96,7 +96,10 @@ section {
 
 /* docs */
 .docs {
-  height: 100%;
+  padding: 2em 5em 0 5em;
+  overflow-y: scroll;
+  max-height: 100vh;
+  font-size: 1.5rem;
 }
 
 .get {
