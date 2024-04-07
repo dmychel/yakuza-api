@@ -1,7 +1,5 @@
 import PropTypes from "prop-types";
 
-import "/src/styles/example.css";
-
 function Example({ loading, object }) {
   return (
     <section className="example">
