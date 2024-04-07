@@ -27,7 +27,7 @@
 body {
   height: 100vh;
   overflow-y: hidden;
-  color: white;
+  color: black;
 }
 
 header {
@@ -59,7 +59,6 @@ main {
 }
 
 section {
-  border: 1px solid;
   padding: 5%;
 }
 
@@ -91,6 +90,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  color: wheat;
+  font-size: 1.25rem;
 }
 
 .profile_background {
@@ -117,6 +118,12 @@ section {
   background-size: cover;
 }
 
+.profile_header img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
 .seperator {
   padding: 1px;
   background-color: crimson;
@@ -132,6 +139,40 @@ section {
   align-items: center;
   height: 100%;
   width: 60%;
+}
+
+.profile_info h2 {
+  font-family: "Yakuza";
+}
+
+/* hson display */
+
+.code_block {
+  display: flex;
+  background-color: black;
+  color: white;
+  margin-bottom: 5%;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.left_json,
+.right_json {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+  white-space: nowrap;
+}
+
+.left_json {
+  width: 30%;
+  color: cyan;
+}
+
+.right_json {
+  width: 70%;
+  color: #ff007f;
+  overflow-x: scroll;
 }
 
 .drop_shadow {
