@@ -17,8 +17,7 @@ function About() {
             When delving into a new technology or concept, the development
             community often emphasizes the importance of learning by creating
             projects that address real-world problems. However, brainstorming
-            project ideas for technologies you have very little to no experince
-            with can be challenging. What issues are there to solve when
+            project ideas for technologies you have very little to no experience can be challenging. What issues are there to solve when
             you&apos;re you&apos;ve never used the technology?
           </p>
           <p>
@@ -27,7 +26,7 @@ function About() {
             inception of this project. Although still in its beta stage,
             I&apos;m uncertain about the extent to which I intend to expand it.
             Nevertheless, I plan to create and maintain a roadmap to guide its
-            development
+            development.
           </p>
         </div>
       </div>
