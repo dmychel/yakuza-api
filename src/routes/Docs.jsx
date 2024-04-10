@@ -9,7 +9,7 @@ function Docs() {
         <img src="assets/images/back.jpg" />
       </div>
 
-      <div className="doc_info">
+      <div className="doc_info" style={{ fontSize: "20px" }}>
         <h2 style={{ fontFamily: "Yakuza" }}>
           Yakuza <span style={{ color: "crimson" }}>API</span>
         </h2>
