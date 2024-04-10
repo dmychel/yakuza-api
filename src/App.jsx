@@ -8,6 +8,8 @@ import Error from "./routes/Error";
 
 // css
 import "/src/styles/app.css";
+
+import { Link } from "react-router-dom";
 import Roadmap from "./routes/Roadmap";
 
 function App() {
@@ -15,9 +17,7 @@ function App() {
     <BrowserRouter>
       <section className="app">
         <header style={{ backgroundImage: `url("assets/images/cast-bg.png")` }}>
-          <p>
-            By <span>Dylon Crowley-Perez</span>
-          </p>
+          <Link to="/">Yakuza API</Link>
         </header>
         <main>
           <Routes>
