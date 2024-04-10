@@ -28,6 +28,13 @@ function Demo() {
         "Currenlty there are only 23 characters in the data base. We are working on adding more :)"
       );
       return;
+    } else if (value === "random") {
+      callAPI(value).then((result) => {
+        setObject(result);
+      });
+    } else if (isNaN(value)) {
+      alert("please input a number or 'random'");
+      return;
     }
     callAPI(value).then((result) => {
       setObject(result);
