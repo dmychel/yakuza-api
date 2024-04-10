@@ -1,12 +1,14 @@
-// functions
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { callAPI } from "../api/fetch";
-
 // components
 import CodeSnippet from "./CodeSnippet";
 import Example from "./Example";
 import FetchForm from "./FetchForm";
+
+// functions
+import { useState, useEffect } from "react";
+import { callAPI } from "/src/api/fetch";
+
+// other
+import { Link } from "react-router-dom";
 
 function Demo() {
   const [loading, setLoading] = useState(true);
@@ -31,7 +33,6 @@ function Demo() {
       setObject(result);
     });
   }
-
   return (
     <div className="demo">
       <div className="demo_info">
