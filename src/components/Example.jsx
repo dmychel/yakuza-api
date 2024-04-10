@@ -21,7 +21,9 @@ function Example({ loading, object }) {
           <span className="seperator"></span>
 
           <div className="profile_info">
-            <h2 className="character_name">{object.name}</h2>
+            <h2 className="character_name" style={{ fontFamily: "Yakuza" }}>
+              {object.name}
+            </h2>
             <p className="character_description">{object.description}</p>
           </div>
         </div>
