@@ -2,35 +2,31 @@ import PropTypes from "prop-types";
 
 function Example({ loading, object }) {
   return (
-    <section className="example">
+    <div className="example">
       {loading ? (
         "Loading..."
       ) : (
         // background
-        <div className="character_profile drop_shadow">
-          <div className="profile_background">
-            <img src="/assets/back.jpg" alt="" />
-          </div>
-
-          {/* image */}
+        <div
+          className="character_profile box_shadow"
+          style={{ backgroundImage: `url("assets/purchase_bg.jpg")` }}
+        >
           <div
-            className="profile_header"
+            className="profile_image"
             style={{ backgroundImage: "url('/assets/features_bg.jpg')" }}
           >
             <img src={object.images[0]} alt={object.name} />
           </div>
 
-          {/* seperator */}
           <span className="seperator"></span>
 
-          {/* info */}
           <div className="profile_info">
             <h2 className="character_name">{object.name}</h2>
             <p className="character_description">{object.description}</p>
           </div>
         </div>
       )}
-    </section>
+    </div>
   );
 }
 

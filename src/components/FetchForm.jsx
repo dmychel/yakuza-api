@@ -11,7 +11,7 @@ function FetchForm({ handleSubmit }) {
   const [value, setValue] = useState("");
 
   return (
-    <section className="form">
+    <div className="form">
       <p>
         You can send a GET request and see the JSON data response. Try searching
         for a character by submitting an item number
@@ -21,17 +21,7 @@ function FetchForm({ handleSubmit }) {
         <span style={{ color: "blue" }}>
           https://rest-api-jvtz.onrender.com/character/
         </span>
-        <span
-          style={{
-            color: "white",
-            fontFamily: "Yakuza",
-            fontSize: "1.5rem",
-            WebkitTextStroke: "1px black",
-            letterSpacing: "2px",
-          }}
-        >
-          22
-        </span>
+        <span>22</span>
       </p>
       <form onSubmit={(e) => handleSubmit(e, value)}>
         <label>https://rest-api-jvtz.onrender.com/character/</label>
@@ -42,7 +32,7 @@ function FetchForm({ handleSubmit }) {
         />
         <input type="submit" value="submit" />
       </form>
-    </section>
+    </div>
   );
 }
 

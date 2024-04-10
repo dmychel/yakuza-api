@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 function CodeSnippet({ loading, object }) {
   return (
-    <section className="code_snippet">
+    <div className="code_snippet">
       <h4>JSON response</h4>
       <div className="code_block drop_shadow">
         {loading ? (
@@ -28,7 +28,7 @@ function CodeSnippet({ loading, object }) {
           </>
         )}
       </div>
-    </section>
+    </div>
   );
 }
 

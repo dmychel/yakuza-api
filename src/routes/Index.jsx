@@ -1,14 +1,8 @@
 // components
-import Demo from "/src/components/Demo";
-import Intro from "/src/components/Intro";
+import Home from "/src/components/Home";
 
-function Content() {
-  return (
-    <section className="content">
-      <Intro />
-      <Demo />
-    </section>
-  );
+function Index() {
+  return <Home />;
 }
 
-export default Content;
+export default Index;

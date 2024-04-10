@@ -33,11 +33,9 @@ function Demo() {
   }
 
   return (
-    <section className="demo">
-      <div className="demo_title">
-        <h2>Demo</h2>
-      </div>
+    <div className="demo">
       <div className="demo_info">
+        <h2>Demo</h2>
         <p>
           Below is a quick demo of what you can do with the YakuzaAPI and the
           kind of assets we provide. If you need help using the YakuzaAPI, read
@@ -51,7 +49,7 @@ function Demo() {
       <FetchForm handleSubmit={handleSubmit} />
       <Example loading={loading} object={object} />
       <CodeSnippet loading={loading} object={object} />
-    </section>
+    </div>
   );
 }
 
