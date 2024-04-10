@@ -4,7 +4,7 @@ function Home() {
   return (
     <section className="home_wrapper">
       <div className="home_background">
-        <img src="assets/kiryu-disco.jpg" />
+        <img src="assets/images/kiryu-disco.jpg" />
       </div>
 
       <div className="intro">

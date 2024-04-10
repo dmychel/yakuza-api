@@ -5,7 +5,7 @@ function Error() {
   return (
     <section className="error_wrapper">
       <div className="error_background">
-        <img src="assets/kiryu-404.jpg" />
+        <img src="assets/images/kiryu-404.jpg" />
       </div>
       <div className="error">
         <h2>Looks like this page doesn&apos;t exist</h2>

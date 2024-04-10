@@ -9,11 +9,11 @@ function Example({ loading, object }) {
         // background
         <div
           className="character_profile box_shadow"
-          style={{ backgroundImage: `url("assets/purchase_bg.jpg")` }}
+          style={{ backgroundImage: `url("assets/images/purchase_bg.jpg")` }}
         >
           <div
             className="profile_image"
-            style={{ backgroundImage: "url('/assets/features_bg.jpg')" }}
+            style={{ backgroundImage: "url('/assets/images/features_bg.jpg')" }}
           >
             <img src={object.images[0]} alt={object.name} />
           </div>

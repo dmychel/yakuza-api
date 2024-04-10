@@ -6,7 +6,7 @@ function Docs() {
   return (
     <section className="doc_wrapper">
       <div className="doc_background">
-        <img src="assets/back.jpg" />
+        <img src="assets/images/back.jpg" />
       </div>
 
       <div className="doc_info">

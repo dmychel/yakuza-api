@@ -14,7 +14,7 @@ function App() {
   return (
     <BrowserRouter>
       <section className="app">
-        <header style={{ backgroundImage: `url("assets/cast-bg.png")` }}>
+        <header style={{ backgroundImage: `url("assets/images/cast-bg.png")` }}>
           <p>
             By <span>Dylon Crowley-Perez</span>
           </p>
