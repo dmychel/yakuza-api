@@ -5,19 +5,20 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./routes/Index";
 import Docs from "./routes/Docs";
 import Error from "./routes/Error";
+import Roadmap from "./routes/Roadmap";
 
 // css
 import "/src/styles/app.css";
 
-import { Link } from "react-router-dom";
-import Roadmap from "./routes/Roadmap";
+// components
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <BrowserRouter>
       <section className="app">
         <header style={{ backgroundImage: `url("assets/images/cast-bg.png")` }}>
-          <Link to="/">Yakuza API</Link>
+          <NavBar />
         </header>
         <main>
           <Routes>
