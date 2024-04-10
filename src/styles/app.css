@@ -15,6 +15,17 @@
     "Lucida Sans", Arial, sans-serif;
 }
 
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+ul a {
+  text-decoration: none;
+  color: white;
+}
+
 header {
   padding: 10px 16px;
   position: fixed;
@@ -27,7 +38,8 @@ header {
 
 .home_wrapper,
 .error_wrapper,
-.doc_wrapper {
+.doc_wrapper,
+.roadmap_wrapper {
   padding: 5%;
   display: flex;
   flex-direction: column;
@@ -36,7 +48,8 @@ header {
 
 .home_background,
 .error_background,
-.doc_background {
+.doc_background,
+.roadmap_background {
   top: 0;
   left: 0;
   position: fixed;
@@ -47,7 +60,8 @@ header {
 
 .home_background img,
 .error_background img,
-.doc_background img {
+.doc_background img,
+.roadmap_background img {
   top: 0;
   left: 0;
   height: 100%;
@@ -184,21 +198,6 @@ header {
 .get_json {
   width: 80%;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-/* error */
-.error_wrapper {
-  height: 100vh;
-  overflow-y: hidden;
-}
-
-.error {
-  font-family: "Yakuza";
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
 }
 
 .box_shadow {
