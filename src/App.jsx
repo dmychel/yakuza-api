@@ -13,27 +13,27 @@ import Roadmap from "./routes/Roadmap";
 function App() {
   return (
     <BrowserRouter>
-      <header>
-        <div className="header_background">
-          <img src="/assets/back.jpg" alt="" />
-        </div>
-        <p>
-          By <span>Dylon Crowley-Perez</span>
-        </p>
-      </header>
-      <main>
-        <div className="background">
-          <img src="/assets/kiryu-disco.jpg" alt="" />
-        </div>
-        <Routes>
-          <Route path="/" element={<Index />}></Route>
-          <Route path="/docs" element={<Docs />}></Route>
-          <Route path="/roadmap" element={<Roadmap />}></Route>
-          <Route path="*" element={<Error />}></Route>
-        </Routes>
-      </main>
+      <section className="app">
+        <header style={{ backgroundImage: `url("assets/cast-bg.png")` }}>
+          <p>
+            By <span>Dylon Crowley-Perez</span>
+          </p>
+        </header>
+        <main>
+          <Routes>
+            <Route path="/" element={<Index />}></Route>
+            <Route path="/docs" element={<Docs />}></Route>
+            <Route path="/roadmap" element={<Roadmap />}></Route>
+            <Route path="*" element={<Error />}></Route>
+          </Routes>
+        </main>
+      </section>
     </BrowserRouter>
   );
 }
+
+<div className="header_background">
+  <img src="/assets/back.jpg" alt="" />
+</div>;
 
 export default App;
