@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "Yakuza";
-  src: url("assets/fonts/edosz.ttf");
+  src: url("/assets/fonts/edosz.ttf");
 }
 
 .app {
