@@ -10,6 +10,7 @@
 
 .app {
   font-size: 1.75rem;
+  height: 100%;
 }
 
 header {
@@ -22,15 +23,16 @@ header {
   z-index: 1;
 }
 
-.home_wrapper {
-  position: relative;
+.home_wrapper,
+.error_wrapper {
   padding: 5%;
   display: flex;
   flex-direction: column;
   gap: 2em;
 }
 
-.home_background {
+.home_background,
+.error_background {
   top: 0;
   left: 0;
   position: fixed;
@@ -39,7 +41,8 @@ header {
   z-index: -2;
 }
 
-.home_background img {
+.home_background img,
+.error_background img {
   top: 0;
   left: 0;
   height: 100%;
@@ -138,6 +141,20 @@ header {
   width: 70%;
   overflow-x: scroll;
   color: #ff007f;
+}
+
+.error_wrapper {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.error {
+  font-family: "Yakuza";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .box_shadow {
