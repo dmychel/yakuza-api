@@ -200,6 +200,19 @@ header {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+/* about */
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.about_text {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
 .box_shadow {
   box-shadow: crimson 0px 20px 30px -10px;
 }
