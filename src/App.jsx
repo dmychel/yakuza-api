@@ -6,6 +6,7 @@ import Index from "./routes/Index";
 import Docs from "./routes/Docs";
 import Error from "./routes/Error";
 import Roadmap from "./routes/Roadmap";
+import About from "./routes/About";
 
 // css
 import "/src/styles/app.css";
@@ -25,6 +26,7 @@ function App() {
             <Route path="/" element={<Index />}></Route>
             <Route path="/docs" element={<Docs />}></Route>
             <Route path="/roadmap" element={<Roadmap />}></Route>
+            <Route path="/about" element={<About />}></Route>
             <Route path="*" element={<Error />}></Route>
           </Routes>
         </main>
