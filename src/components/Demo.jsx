@@ -24,21 +24,23 @@ function Demo() {
   function handleSubmit(e, value) {
     e.preventDefault();
     if (value > 23) {
-      alert(
+      return alert(
         "Currenlty there are only 23 characters in the data base. We are working on adding more :)"
       );
-      return;
     } else if (value === "random") {
       callAPI(value).then((result) => {
-        setObject(result);
+        return setObject(result);
+
       });
     } else if (isNaN(value)) {
-      alert("please input a number or 'random'");
-      return;
+      return alert("please input a number or 'random'");
     }
-    callAPI(value).then((result) => {
-      setObject(result);
-    });
+    else {
+      callAPI(value).then((result) => {
+        return setObject(result);
+      });
+    }
+
   }
   return (
     <div className="demo">
