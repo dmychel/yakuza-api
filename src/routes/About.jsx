@@ -25,8 +25,7 @@ function About() {
             for a Yakuza API to utilize its resources, which led to the
             inception of this project. Although still in its beta stage,
             I&apos;m uncertain about the extent to which I intend to expand it.
-            Nevertheless, I plan to create and maintain a roadmap to guide its
-            development.
+            Nevertheless, I plan to add and maintain this project.
           </p>
         </div>
       </div>
