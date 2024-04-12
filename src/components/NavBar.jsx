@@ -12,9 +12,6 @@ function NavBar() {
             <Link to="/docs">Docs</Link>
           </li>
           <li>
-            <Link to="/roadmap">Roadmap</Link>
-          </li>
-          <li>
             <Link to="/about">About</Link>
           </li>
         </ul>
