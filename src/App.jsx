@@ -5,7 +5,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./routes/Index";
 import Docs from "./routes/Docs";
 import Error from "./routes/Error";
-import Roadmap from "./routes/Roadmap";
 import About from "./routes/About";
 
 // css
@@ -25,7 +24,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Index />}></Route>
             <Route path="/docs" element={<Docs />}></Route>
-            <Route path="/roadmap" element={<Roadmap />}></Route>
             <Route path="/about" element={<About />}></Route>
             <Route path="*" element={<Error />}></Route>
           </Routes>
