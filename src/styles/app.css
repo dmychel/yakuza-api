@@ -45,6 +45,7 @@ header {
   flex-direction: column;
   gap: 2em;
   font-size: 24px;
+  animation: fade 1s;
 }
 
 .home_background,
@@ -309,7 +310,15 @@ header {
   }
 }
 
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
 
+  to {
+    opacity: 1;
+  }
+}
 
 .box_shadow {
   box-shadow: crimson 0px 20px 30px -10px;
