@@ -11,6 +11,7 @@ form {
 input {
   border: none;
   margin-left: 0.5%;
+  background-color: gray;
 }
 
 input[type="submit"] {
