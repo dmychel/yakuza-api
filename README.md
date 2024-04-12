@@ -1,8 +1,21 @@
-# React + Vite
+<h1 align="center">Yakuza API</h1>
+<p align="center">A resFUL API serving data from the Yakuza Series</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This API's purpose is to serve character, location, and media assets to developers. The idea is to give Web Developers another free media asset resource to use for their passion projects.
 
-Currently, two official plugins are available:
+You can request a one entry, all entries, or a random entry from one of two categories.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+character or location
+
+$ curl https://botw-compendium.herokuapp.com/api/v3/entry/white-maned_lynel
+ ```
+    {
+        _id:            660b01fa4aa15727d67398b5
+        category:       "character"
+        description:    "Kazuma Kiryu (Kiryū Kazuma), also known as Joryu (Jōryū), and Taichi Suzuki (Suzuki Taichi), is the former primary protagonist of the Like a Dragon (formerly Yakuza) series. He is an agent of the Daidoji Faction, the former fourth chairman of the Tojo Clan, the former manager of Morning Glory Orphanage, and a former taxi driver for Nagasu Taxi."
+        images:
+        item:
+        name:
+    }
+```
