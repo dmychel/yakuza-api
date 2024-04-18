@@ -11,7 +11,7 @@ character or location
 ``` 
 GET https://rest-api-jvtz.onrender.com/character/1 
 ```
-To get started, take a look at he <a href="https://yakuza-api.netlify.app/docs">documentation</a>
+To get started, take a look at the <a href="https://yakuza-api.netlify.app">documentation</a>
 
 ## Copyright
 
