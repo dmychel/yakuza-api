@@ -1,7 +1,7 @@
 html,
 body {
-  display: block;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  min-height: 100%;
+  box-sizing: border-box;
 }
 
 * {
