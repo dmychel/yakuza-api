@@ -12,6 +12,7 @@ export default function Index() {
           <h1 style={{ fontFamily: "Yakuza" }}>
             Yakuza <span style={{ color: "crimson" }}>API</span>
           </h1>
+          <br />
           <p>
             A restful API designed to serve media, location, and character info
             from the Yakuza series.
