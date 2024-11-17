@@ -1,8 +1,8 @@
-import styles from "/src/styles/index.module.scss";
+import styles from "/src/styles/about.module.scss";
 
 export default function About() {
   return (
-    <section class={styles.about_wrapper}>
+    <div class={styles.about_wrapper}>
       <div class={styles.about_background}>
         <img src="assets/images/purchase_bg.jpg" alt="" />
       </div>
@@ -32,6 +32,6 @@ export default function About() {
           </p>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
