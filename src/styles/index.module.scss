@@ -1,41 +1,4 @@
-.home_wrapper,
-.error_wrapper,
-.doc_wrapper,
-.about_wrapper,
-.roadmap_wrapper {
-  padding: 5%;
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-  font-size: 24px;
-}
-
-.demo_background,
-.error_background,
-.doc_background,
-.about_background,
-.roadmap_background {
-  top: 0;
-  left: 0;
-  position: fixed;
-  height: 100vh;
-  width: 100%;
-  z-index: -2;
-}
-
-.home_background img,
-.demo_background img,
-.error_background img,
-.doc_background img,
-.about_background img,
-.roadmap_background img {
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-}
+@import "app";
 
 .intro {
   line-height: 200%;
@@ -323,4 +286,9 @@
 
 .box_shadow {
   box-shadow: crimson 0px 20px 30px -10px;
+}
+
+a {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }

@@ -14,10 +14,54 @@ body {
   src: url("/assets/fonts/edosz.ttf");
 }
 
+.home_wrapper,
+.error_wrapper,
+.doc_wrapper,
+.about_wrapper,
+.roadmap_wrapper {
+  position: relative;
+  gap: 2em;
+  font-size: 24px;
+}
+
+.home,
+.demo,
+.error,
+.doc,
+.about,
+.roadmap {
+  max-width: 45rem;
+  margin: auto;
+  margin-bottom: 5%;
+}
+
+.home_background,
+.demo_background,
+.error_background,
+.doc_background,
+.about_background,
+.roadmap_background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+}
+
+.home_background img,
+.demo_background img,
+.error_background img,
+.doc_background img,
+.about_background img,
+.roadmap_background img {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 100% 25%;
+}
+
 a {
   color: rgb(161, 0, 0);
   text-decoration: none;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
   font-family: "Yakuza";
 }

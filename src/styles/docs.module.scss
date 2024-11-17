@@ -1,0 +1,75 @@
+@import "app";
+
+.doc_info {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  width: 100%;
+}
+
+.get_code {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  color: white;
+  white-space: nowrap;
+  width: fit-content;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.get_code h4 {
+  color: black;
+}
+
+.get_json {
+  width: 80%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+@media screen and (max-width: 724px) {
+  .doc_wrapper {
+    padding: 0;
+    width: 60%;
+    margin: auto;
+  }
+
+  .get_code {
+    overflow-x: scroll;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .doc_wrapper {
+    width: 70%;
+  }
+
+  form {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25em;
+  }
+
+  form input {
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 3px;
+    width: 50%;
+  }
+
+  .code_block {
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .left_json,
+  .right_json {
+    width: 100%;
+  }
+
+  .get_code {
+    font-size: 1rem;
+  }
+}
