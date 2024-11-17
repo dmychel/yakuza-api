@@ -1,7 +1,7 @@
 // components
-import CodeSnippet from "./CodeSnippet";
-import Example from "./Example";
-import FetchForm from "./FetchForm";
+import CodeSnippet from "/src/components/CodeSnippet";
+import Example from "/src/components/Example";
+import FetchForm from "/src/components/FetchForm";
 
 // functions
 import { useState, useEffect } from "react";
@@ -10,7 +10,7 @@ import { callAPI } from "/src/api/fetch";
 // other
 import { Link } from "react-router-dom";
 
-function Demo() {
+export default function Demo() {
   const [loading, setLoading] = useState(true);
   const [object, setObject] = useState(null);
 
@@ -30,17 +30,14 @@ function Demo() {
     } else if (value === "random") {
       callAPI(value).then((result) => {
         return setObject(result);
-
       });
     } else if (isNaN(value)) {
       return alert("please input a number or 'random'");
-    }
-    else {
+    } else {
       callAPI(value).then((result) => {
         return setObject(result);
       });
     }
-
   }
   return (
     <div className="demo">
@@ -65,5 +62,3 @@ function Demo() {
     </div>
   );
 }
-
-export default Demo;
