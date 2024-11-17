@@ -1,8 +1,10 @@
+import styles from "/src/styles/index.module.scss";
+
 function GetALL() {
   return (
-    <div className="get_info">
+    <div class={styles.get_info}>
       <h2>Get All Character/Location</h2>
-      <div className="get_text">
+      <div class={styles.get_text}>
         <p>
           The last enpoint available to you is the{" "}
           <span style={{ fontFamily: "Yakuza", color: "crimson" }}>all</span>{" "}
@@ -10,7 +12,7 @@ function GetALL() {
           category.
         </p>
       </div>
-      <div className="code_block get_code">
+      <div class={`${styles.code_block} ${styles.get_code}`}>
         <p>
           GET https://rest-api-jvtz.onrender.com/
           <span style={{ color: "#66FF00" }}>character</span>/

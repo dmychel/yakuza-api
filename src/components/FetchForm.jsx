@@ -7,7 +7,7 @@ import "/src/styles/form.css";
 // props
 import PropTypes from "prop-types";
 
-function FetchForm({ handleSubmit }) {
+export default function FetchForm({ handleSubmit }) {
   const [value, setValue] = useState("");
 
   return (
@@ -39,5 +39,3 @@ function FetchForm({ handleSubmit }) {
 FetchForm.propTypes = {
   handleSubmit: PropTypes.func,
 };
-
-export default FetchForm;
