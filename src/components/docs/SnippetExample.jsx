@@ -1,6 +1,6 @@
 import Proptypes from "prop-types";
 
-import styles from "/src/styles/index.module.scss";
+import styles from "/src/styles/docs.module.scss";
 
 function SnippetExample({ character }) {
   return (
