@@ -1,8 +1,9 @@
 import PropTypes from "prop-types";
 
+// styles
 import styles from "/src/styles/index.module.scss";
 
-function CodeSnippet({ loading, object }) {
+export default function CodeSnippet({ loading, object }) {
   return (
     <div class={styles.code_snippet}>
       <h4>JSON response</h4>
@@ -38,5 +39,3 @@ CodeSnippet.propTypes = {
   loading: PropTypes.bool,
   object: PropTypes.object,
 };
-
-export default CodeSnippet;
