@@ -13,3 +13,11 @@ body {
   font-family: "Yakuza";
   src: url("/assets/fonts/edosz.ttf");
 }
+
+a {
+  color: rgb(161, 0, 0);
+  text-decoration: none;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-family: "Yakuza";
+}

@@ -8,10 +8,9 @@
   flex-direction: column;
   gap: 2em;
   font-size: 24px;
-  animation: fade 1s;
 }
 
-.home_background,
+.demo_background,
 .error_background,
 .doc_background,
 .about_background,
@@ -25,6 +24,7 @@
 }
 
 .home_background img,
+.demo_background img,
 .error_background img,
 .doc_background img,
 .about_background img,
@@ -39,11 +39,63 @@
 
 .intro {
   line-height: 200%;
+  .CTA {
+    margin-top: 4em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2em;
+
+    .demo_card {
+      border-radius: 8px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 300px;
+      width: 550px;
+
+      .hover_content {
+        opacity: 1;
+        transition: ease in 1s;
+        border-radius: 8px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(4px);
+        background-color: #00000077;
+        z-index: 1;
+      }
+
+      .transition {
+        transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -webkit-transition: all 0.25s ease-in-out;
+      }
+
+      .hover_content:hover {
+        opacity: 0;
+      }
+
+      img {
+        border-radius: 8px;
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+      }
+    }
+  }
 }
 
 /* demo */
 
 .demo {
+  margin: auto;
+  max-width: 55rem;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -138,7 +190,7 @@
   width: 100vw;
 }
 
-.get_info {
+.doc_info {
   display: flex;
   flex-direction: column;
   gap: 1em;
