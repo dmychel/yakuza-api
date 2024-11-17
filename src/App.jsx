@@ -1,29 +1,26 @@
 // npm package
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// Routes
-import Index from "./routes/Index";
-import Docs from "./routes/Docs";
-import Error from "./routes/Error";
-import About from "./routes/About";
-
-// css
-import "/src/styles/app.css";
+// routes
+import Index from "/src/routes/Index";
+import MyRevelations from "/src/routes/MyRevelations";
+import About from "/src/routes/About";
 
 // components
-import NavBar from "./components/NavBar";
+import Header from "/src/components/Header";
+
+// styling
+import "/src/styles/app.css";
 
 function App() {
   return (
     <BrowserRouter>
       <section className="app">
-        <header style={{ backgroundImage: `url("assets/images/cast-bg.png")` }}>
-          <NavBar />
-        </header>
+        <Header />
         <main>
           <Routes>
             <Route path="/" element={<Index />}></Route>
-            <Route path="/docs" element={<Docs />}></Route>
+            <Route path="/my-revelations" element={<MyRevelations />}></Route>
             <Route path="/about" element={<About />}></Route>
             <Route path="*" element={<Error />}></Route>
           </Routes>
@@ -32,9 +29,5 @@ function App() {
     </BrowserRouter>
   );
 }
-
-<div className="header_background">
-  <img src="/assets/back.jpg" alt="" />
-</div>;
 
 export default App;
