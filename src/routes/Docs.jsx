@@ -2,14 +2,16 @@ import GetALL from "../components/docs/GetAll";
 import GetEntry from "../components/docs/GetEntry";
 import GetRandom from "../components/docs/GetRandom";
 
-function Docs() {
+import styles from "/src/styles/index.module.scss";
+
+export default function Docs() {
   return (
-    <section className="doc_wrapper">
-      <div className="doc_background">
+    <div class={styles.doc_wrapper}>
+      <div class={styles.doc_background}>
         <img src="assets/images/back.jpg" />
       </div>
 
-      <div className="doc_info" style={{ fontSize: "20px" }}>
+      <div class={styles.doc_info} style={{ fontSize: "20px" }}>
         <h2 style={{ fontFamily: "Yakuza" }}>
           Yakuza <span style={{ color: "crimson" }}>API</span>
         </h2>
@@ -28,8 +30,6 @@ function Docs() {
         <GetRandom />
         <GetALL />
       </div>
-    </section>
+    </div>
   );
 }
-
-export default Docs;
