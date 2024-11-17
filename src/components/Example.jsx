@@ -1,30 +1,31 @@
 import PropTypes from "prop-types";
+import styles from "/src/styles/index.module.scss";
 
 function Example({ loading, object }) {
   return (
-    <div className="example">
+    <div class={styles.example}>
       {loading ? (
         "Loading..."
       ) : (
         // background
         <div
-          className="character_profile box_shadow"
+          class={styles.character_profile}
           style={{ backgroundImage: `url("assets/images/purchase_bg.jpg")` }}
         >
           <div
-            className="profile_image"
+            class={styles.profile_image}
             style={{ backgroundImage: "url('/assets/images/features_bg.jpg')" }}
           >
             <img src={object.images[0]} alt={object.name} />
           </div>
 
-          <span className="seperator"></span>
+          <span class={styles.seperator}></span>
 
-          <div className="profile_info">
-            <h2 className="character_name" style={{ fontFamily: "Yakuza" }}>
+          <div class={styles.profile_info}>
+            <h2 class={styles.character_name} style={{ fontFamily: "Yakuza" }}>
               {object.name}
             </h2>
-            <p className="character_description">{object.description}</p>
+            <p class={styles.character_description}>{object.description}</p>
           </div>
         </div>
       )}
