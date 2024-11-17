@@ -2,7 +2,7 @@ import styles from "/src/styles/myRevelations.module.scss";
 
 export default function MyRevelations() {
   return (
-    <div class={styles.home}>
+    <div class={styles.my_revelations_wrapper}>
       <div class={styles.hero}>
         <img src="/assets/images/blog-banner.png" alt="Banner" />
       </div>
