@@ -10,14 +10,15 @@ import Demo from "/src/routes/Demo";
 
 // components
 import Header from "/src/components/Header";
+import Footer from "./components/Footer";
 
 // styling
 import "/src/styles/app.css";
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
-      <section className="app">
+      <div className="app">
         <Header />
         <main>
           <Routes>
@@ -29,9 +30,8 @@ function App() {
             <Route path="*" element={<Error />}></Route>
           </Routes>
         </main>
-      </section>
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }
-
-export default App;
