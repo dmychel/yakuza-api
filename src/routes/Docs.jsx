@@ -8,13 +8,13 @@ export default function Docs() {
   return (
     <div class={styles.doc_wrapper}>
       <div class={styles.doc_background}>
-        <img src="assets/images/back.jpg" />
+        <img src="assets/images/intro_bg.jpg" />
       </div>
       <div class={styles.doc}>
         <div class={styles.doc_info} style={{ fontSize: "20px" }}>
-          <h2 style={{ fontFamily: "Yakuza" }}>
+          <h1 style={{ fontFamily: "Yakuza" }}>
             Yakuza <span style={{ color: "crimson" }}>API</span>
-          </h2>
+          </h1>
           <p>
             There are two main endpoints you can request data from:{" "}
             <span style={{ fontFamily: "Yakuza", color: "crimson" }}>
