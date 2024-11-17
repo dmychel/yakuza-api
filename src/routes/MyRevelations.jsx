@@ -1,4 +1,4 @@
-import styles from "/src/styles/home.module.scss";
+import styles from "/src/styles/myRevelations.module.scss";
 
 export default function MyRevelations() {
   return (
