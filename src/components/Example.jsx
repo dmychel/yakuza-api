@@ -1,7 +1,9 @@
 import PropTypes from "prop-types";
+
+// styles
 import styles from "/src/styles/index.module.scss";
 
-function Example({ loading, object }) {
+export default function Example({ loading, object }) {
   return (
     <div class={styles.example}>
       {loading ? (
@@ -37,5 +39,3 @@ Example.propTypes = {
   loading: PropTypes.bool,
   object: PropTypes.object,
 };
-
-export default Example;
