@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "/src/styles/index.module.scss";
+import styles from "/src/styles/docs.module.scss";
 
 function GetRandom() {
   return (

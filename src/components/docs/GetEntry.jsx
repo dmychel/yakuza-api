@@ -1,7 +1,7 @@
 // imports
 import SnippetExample from "./SnippetExample";
 
-import styles from "/src/styles/index.module.scss";
+import styles from "/src/styles/docs.module.scss";
 
 function GetEntry() {
   return (
