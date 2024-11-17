@@ -1,14 +1,16 @@
-function About() {
+import styles from "/src/styles/index.module.scss";
+
+export default function About() {
   return (
-    <section className="about_wrapper">
-      <div className="about_background">
+    <section class={styles.about_wrapper}>
+      <div class={styles.about_background}>
         <img src="assets/images/purchase_bg.jpg" alt="" />
       </div>
-      <div className="about">
+      <div class={styles.about}>
         <h2 style={{ fontFamily: "Yakuza" }}>
           Yakuza <span style={{ color: "crimson" }}>API</span>
         </h2>
-        <div className="about_text">
+        <div class={styles.about_text}>
           <h3>Why</h3>
           <p>
             I created this API for two reasons: Firstly, there were no Yakuza
@@ -33,5 +35,3 @@ function About() {
     </section>
   );
 }
-
-export default About;
