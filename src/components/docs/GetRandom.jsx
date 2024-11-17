@@ -22,8 +22,8 @@ function GetRandom() {
       <div class={styles.get_text}>
         <p>
           You can try the random endpoint from the interactive{" "}
-          <Link to="/" style={{ fontFamily: "Yakuza" }}>
-            home page
+          <Link to="/demo" style={{ fontFamily: "Yakuza" }}>
+            Demo Page
           </Link>
           .
         </p>
