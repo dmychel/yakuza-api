@@ -1,10 +1,64 @@
 @import "app";
 
+.doc_background {
+  img {
+    filter: blur(5px);
+    filter: brightness(20%);
+  }
+}
+
+.doc {
+  color: white;
+}
+
+.code_snippet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.code_block {
+  display: flex;
+  background-color: black;
+  width: 100%;
+  border-radius: 8px;
+  padding: 1em;
+  color: cyan;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.left_json,
+.right_json {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  white-space: nowrap;
+}
+
+.left_json {
+  width: 30%;
+}
+
+.right_json {
+  width: 70%;
+  overflow-x: scroll;
+  color: #ff007f;
+}
+
+/* docs */
+.doc_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 100vw;
+}
+
 .doc_info {
   display: flex;
   flex-direction: column;
   gap: 1em;
-
+  margin-top: 5%;
   width: 100%;
 }
 
@@ -28,22 +82,15 @@
 }
 
 @media screen and (max-width: 724px) {
-  .doc_wrapper {
-    padding: 0;
-    width: 60%;
-    margin: auto;
-  }
-
   .get_code {
     overflow-x: scroll;
   }
 }
 
 @media screen and (max-width: 640px) {
-  .doc_wrapper {
-    width: 70%;
+  .doc {
+    padding: 1rem;
   }
-
   form {
     flex-direction: column;
     align-items: center;
@@ -59,17 +106,15 @@
   }
 
   .code_block {
-    flex-direction: column;
-    align-items: center;
+    margin: auto;
     gap: 2em;
-  }
-
-  .left_json,
-  .right_json {
-    width: 100%;
   }
 
   .get_code {
     font-size: 1rem;
   }
+}
+
+a {
+  -webkit-text-stroke: 0px;
 }
