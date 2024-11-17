@@ -7,7 +7,7 @@ export default function Footer() {
     <footer style={{ backgroundImage: `url(${background})` }}>
       <p>&#169; 2024 All Rights Reserved.</p>
       <nav>
-        <a href="https://github.com/dmychel">
+        <a href="https://github.com/dmychel" target="_blank">
           <img src="/assets/icons/github.png" alt="Github" />
         </a>
       </nav>
