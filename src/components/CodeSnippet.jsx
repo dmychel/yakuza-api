@@ -1,15 +1,17 @@
 import PropTypes from "prop-types";
 
+import styles from "/src/styles/index.module.scss";
+
 function CodeSnippet({ loading, object }) {
   return (
-    <div className="code_snippet">
+    <div class={styles.code_snippet}>
       <h4>JSON response</h4>
-      <div className="code_block drop_shadow">
+      <div class={`${styles.code_block} ${styles.drop_shadow}`}>
         {loading ? (
           "Loading..."
         ) : (
           <>
-            <div className="left_json">
+            <div class={styles.left_json}>
               <span>_id:</span>
               <span>category:</span>
               <span>description:</span>
@@ -17,7 +19,7 @@ function CodeSnippet({ loading, object }) {
               <span>item:</span>
               <span>name:</span>
             </div>
-            <div className="right_json">
+            <div class={styles.right_json}>
               <span>{object._id}</span>
               <span>&quot;{object.category}&quot;</span>
               <span>&quot;{object.description}&quot;</span>
