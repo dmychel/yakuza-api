@@ -81,6 +81,138 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+// demo
+
+.demo {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 3em;
+}
+
+.demo_info {
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.character_profile {
+  display: grid;
+  grid-template-columns: 30% auto 2fr;
+  grid-template-rows: 300px;
+  gap: 1em;
+  padding: 2em;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 1.25rem;
+  line-height: 150%;
+}
+
+.profile_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profile_image img {
+  height: 100%;
+  width: auto;
+}
+
+.seperator {
+  padding: 2px;
+  border-radius: 8px;
+  background-color: crimson;
+}
+
+.profile_info {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  backdrop-filter: blur(2px);
+}
+
+.code_snippet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.code_block {
+  display: flex;
+  background-color: black;
+  width: 100%;
+  border-radius: 8px;
+  padding: 1em;
+  color: cyan;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.left_json,
+.right_json {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  white-space: nowrap;
+}
+
+.left_json {
+  width: 30%;
+}
+
+.right_json {
+  width: 70%;
+  overflow-x: scroll;
+  color: #ff007f;
+}
+
+.get_code {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  color: white;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.get_code h4 {
+  color: black;
+}
+
+.get_json {
+  width: 80%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+@media screen and (max-width: 1113px) {
+  .character_profile {
+    font-size: 1.25rem;
+  }
+
+  .code_block {
+    padding: 2em;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .character_profile {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .profile_image {
+    height: 40%;
+  }
+}
+
 @media screen and (max-width: 724px) {
   .get_code {
     overflow-x: scroll;

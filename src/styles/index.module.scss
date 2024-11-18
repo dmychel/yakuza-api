@@ -1,5 +1,4 @@
 @import "app";
-
 .intro {
   line-height: 200%;
   .CTA {
@@ -52,18 +51,4 @@
       }
     }
   }
-}
-
-@media screen and (max-width: 640px) {
-  .home_wrapper,
-  .error_wrapper,
-  .doc_wrapper,
-  .about_wrapper,
-  .roadmap_wrapper {
-    padding-top: 15%;
-  }
-}
-
-.box_shadow {
-  box-shadow: crimson 0px 20px 30px -10px;
 }
