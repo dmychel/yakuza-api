@@ -1,0 +1,55 @@
+@import "app";
+.intro {
+  line-height: 200%;
+  .CTA {
+    margin-top: 4em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2em;
+
+    .demo_card {
+      border-radius: 8px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 300px;
+      width: 550px;
+
+      .hover_content {
+        opacity: 0;
+        transition: ease in 1s;
+        border-radius: 8px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(4px);
+        background-color: #00000077;
+        z-index: 1;
+        -webkit-text-stroke: black 1px;
+      }
+
+      .transition {
+        transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -webkit-transition: all 0.25s ease-in-out;
+      }
+
+      .hover_content:hover {
+        opacity: 1;
+      }
+
+      img {
+        border-radius: 8px;
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+footer {
+  background-size: cover;
+  background-position: 69%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  gap: 2em;
+
+  flex-shrink: 0;
+
+  color: white;
+  img {
+    width: 40px;
+    height: auto;
+  }
+
+  img:hover {
+    transform: scale(1.1);
+  }
+}

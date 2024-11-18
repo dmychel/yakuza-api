@@ -1,0 +1,92 @@
+.my_revelations_wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e8ed;
+}
+
+.hero {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.blog_wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto;
+
+  .title {
+    h1 {
+      font-size: 24px;
+      padding: 8px;
+      background-color: gray;
+    }
+    .sub_title {
+      padding: 8px;
+    }
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    background-color: #e07624;
+    padding: 1.5rem;
+
+    .profile_img {
+      width: 100%;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+
+    .bio {
+      ul {
+        list-style: none;
+      }
+    }
+  }
+
+  .content_wrapper {
+    background-color: #e5e8ed;
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 1rem;
+    }
+    .text {
+      width: 50%;
+
+      p {
+        padding: 8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 816px) {
+  .blog_wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .content_wrapper {
+    .content {
+      background-color: #e5e8ed;
+      .text {
+        width: 100%;
+      }
+
+      .image {
+        margin: auto;
+      }
+    }
+  }
+}

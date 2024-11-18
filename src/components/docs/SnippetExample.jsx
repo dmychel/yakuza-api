@@ -1,11 +1,13 @@
 import Proptypes from "prop-types";
 
+import styles from "/src/styles/docs.module.scss";
+
 function SnippetExample({ character }) {
   return (
-    <div className="get_json code_block">
+    <div class={`${styles.get_json} ${styles.code_block}`}>
       {character ? (
         <>
-          <div className="left_json">
+          <div class={styles.left_json}>
             <span>_id:</span>
             <span>category:</span>
             <span>description:</span>
@@ -13,7 +15,7 @@ function SnippetExample({ character }) {
             <span>item:</span>
             <span>name:</span>
           </div>
-          <div className="right_json">
+          <div class={styles.right_json}>
             <span>660b01fa4aa15727d67398b5</span>
             <span>&quot;character&quot;</span>
             <span>
@@ -42,7 +44,7 @@ function SnippetExample({ character }) {
         </>
       ) : (
         <>
-          <div className="left_json">
+          <div class={styles.left_json}>
             <span>_id:</span>
             <span>category:</span>
             <span>description:</span>
@@ -50,7 +52,7 @@ function SnippetExample({ character }) {
             <span>item:</span>
             <span>name:</span>
           </div>
-          <div className="right_json">
+          <div class={styles.right_json}>
             <span>660b02f64aa15727d67398b7</span>
             <span>&quot;location&quot;</span>
             <span>

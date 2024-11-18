@@ -1,14 +1,16 @@
-function About() {
+import styles from "/src/styles/about.module.scss";
+
+export default function About() {
   return (
-    <section className="about_wrapper">
-      <div className="about_background">
+    <div class={styles.about_wrapper}>
+      <div class={styles.about_background}>
         <img src="assets/images/purchase_bg.jpg" alt="" />
       </div>
-      <div className="about">
+      <div class={styles.about}>
         <h2 style={{ fontFamily: "Yakuza" }}>
           Yakuza <span style={{ color: "crimson" }}>API</span>
         </h2>
-        <div className="about_text">
+        <div class={styles.about_text}>
           <h3>Why</h3>
           <p>
             I created this API for two reasons: Firstly, there were no Yakuza
@@ -24,14 +26,20 @@ function About() {
           <p>
             After several attempts with mundane CRUD apps, I recalled my search
             for a Yakuza API to utilize its resources, which led to the
-            inception of this project. Although still in its beta stage,
-            I&apos;m uncertain about the extent to which I intend to expand it.
-            Nevertheless, I plan to add to and maintain this project.
+            inception of this project. I intend to expand it the project, but I
+            am unsure too what degree.
+          </p>
+          <p>
+            If you are a fellow developer and decide to use this API, shoot me a
+            message so I can link it here! If you don't want your project
+            showcased feel free to leave a star on{" "}
+            <a href="https://github.com/dmychel/yakuza-api" target="_blank">
+              Github
+            </a>
+            , if you enjoyed using it!
           </p>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
-
-export default About;

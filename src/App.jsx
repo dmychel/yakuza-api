@@ -1,40 +1,37 @@
 // npm package
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// Routes
-import Index from "./routes/Index";
+// routes
+import Index from "/src/routes/Index";
+import MyRevelations from "/src/routes/MyRevelations";
 import Docs from "./routes/Docs";
-import Error from "./routes/Error";
-import About from "./routes/About";
-
-// css
-import "/src/styles/app.css";
+import About from "/src/routes/About";
+import Demo from "/src/routes/Demo";
 
 // components
-import NavBar from "./components/NavBar";
+import Header from "/src/components/Header";
+import Footer from "./components/Footer";
 
-function App() {
+// styling
+import "/src/styles/app.css";
+
+export default function App() {
   return (
     <BrowserRouter>
-      <section className="app">
-        <header style={{ backgroundImage: `url("assets/images/cast-bg.png")` }}>
-          <NavBar />
-        </header>
+      <div className="app">
+        <Header />
         <main>
           <Routes>
             <Route path="/" element={<Index />}></Route>
+            <Route path="/my-revelations" element={<MyRevelations />}></Route>
             <Route path="/docs" element={<Docs />}></Route>
             <Route path="/about" element={<About />}></Route>
+            <Route path="/demo" element={<Demo />}></Route>
             <Route path="*" element={<Error />}></Route>
           </Routes>
         </main>
-      </section>
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }
-
-<div className="header_background">
-  <img src="/assets/back.jpg" alt="" />
-</div>;
-
-export default App;

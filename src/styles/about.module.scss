@@ -1,0 +1,17 @@
+@import "app";
+
+.about_wrapper {
+  min-height: 100vh;
+  margin-bottom: 5%;
+}
+
+.about_text {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+a {
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
