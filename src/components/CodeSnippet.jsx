@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 // styles
-import styles from "/src/styles/index.module.scss";
+import styles from "/src/styles/docs.module.scss";
 
 export default function CodeSnippet({ loading, object }) {
   return (
