@@ -32,8 +32,11 @@ export default function About() {
           <p>
             If you are a fellow developer and decide to use this API, shoot me a
             message so I can link it here! If you don't want your project
-            showcased feel free to leave a star on Github, if you enjoyed using
-            it!
+            showcased feel free to leave a star on{" "}
+            <a href="https://github.com/dmychel/yakuza-api" target="_blank">
+              Github
+            </a>
+            , if you enjoyed using it!
           </p>
         </div>
       </div>
