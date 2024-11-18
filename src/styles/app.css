@@ -76,3 +76,7 @@ a {
   text-decoration: none;
   font-family: "Yakuza";
 }
+
+.box_shadow {
+  box-shadow: #dc143c 0 20px 30px -10px;
+}
