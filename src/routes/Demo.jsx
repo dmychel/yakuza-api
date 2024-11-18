@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 import { callAPI } from "/src/api/fetch";
 
 // styles
-import styles from "/src/styles/demo.module.scss";
+import styles from "/src/styles/docs.module.scss";
 
 // other
 import { Link } from "react-router-dom";
