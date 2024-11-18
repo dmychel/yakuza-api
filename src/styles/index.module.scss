@@ -18,7 +18,7 @@
       width: 550px;
 
       .hover_content {
-        opacity: 1;
+        opacity: 0;
         transition: ease in 1s;
         border-radius: 8px;
         height: 100%;
@@ -29,6 +29,7 @@
         backdrop-filter: blur(4px);
         background-color: #00000077;
         z-index: 1;
+        -webkit-text-stroke: black 1px;
       }
 
       .transition {
@@ -38,7 +39,7 @@
       }
 
       .hover_content:hover {
-        opacity: 0;
+        opacity: 1;
       }
 
       img {
