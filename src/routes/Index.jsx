@@ -22,7 +22,14 @@ export default function Index() {
           <h3 style={{ fontFamily: "Yakuza" }}>Breif Summary</h3>
           <p>
             This API was created to serve beginner web developers who are
-            looking for cool assets for their projects.
+            looking for cool assets for their projects, similar too{" "}
+            <a
+              href="https://gadhagod.github.io/Hyrule-Compendium-API/#/"
+              target="_blank"
+            >
+              Hyrule Compendium API
+            </a>
+            .
             <br />
             <br />
             While this API is much smaller in scope and complexity (written in
@@ -33,7 +40,7 @@ export default function Index() {
           <br />
           <p>
             Below you can choose between a interactive demo of the API. Or my
-            favorite, a small recreation of Kiryu's '
+            personal favorite, a small recreation of Kiryu's '
             <span style={{ color: "red", fontFamily: "Yakuza" }}>
               My Revelations
             </span>

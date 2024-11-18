@@ -26,9 +26,14 @@ export default function About() {
           <p>
             After several attempts with mundane CRUD apps, I recalled my search
             for a Yakuza API to utilize its resources, which led to the
-            inception of this project. Although still in its beta stage,
-            I&apos;m uncertain about the extent to which I intend to expand it.
-            Nevertheless, I plan to add to and maintain this project.
+            inception of this project. I intend to expand it the project, but I
+            am unsure too what degree.
+          </p>
+          <p>
+            If you are a fellow developer and decide to use this API, shoot me a
+            message so I can link it here! If you don't want your project
+            showcased feel free to leave a star on Github, if you enjoyed using
+            it!
           </p>
         </div>
       </div>
