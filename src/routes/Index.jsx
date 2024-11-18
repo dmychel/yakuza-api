@@ -10,7 +10,7 @@ export default function Index() {
       <div class={styles.home}>
         <div class={styles.intro}>
           <h1 style={{ fontFamily: "Yakuza" }}>
-            Yakuza <span style={{ color: "crimson" }}>API</span>
+            Yakuza <span style={{ color: "rgb(143, 0, 0)" }}>API</span>
           </h1>
           <br />
           <p>
@@ -41,7 +41,7 @@ export default function Index() {
           <p>
             Below you can choose between a interactive demo of the API. Or my
             personal favorite, a small recreation of Kiryu's '
-            <span style={{ color: "red", fontFamily: "Yakuza" }}>
+            <span style={{ color: "rgb(143, 0, 0)", fontFamily: "Yakuza" }}>
               My Revelations
             </span>
             ' {":)"}.
