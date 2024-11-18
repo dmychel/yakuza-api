@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 // styles
-import styles from "/src/styles/index.module.scss";
+import styles from "/src/styles/docs.module.scss";
 
 export default function Example({ loading, object }) {
   return (
@@ -11,7 +11,7 @@ export default function Example({ loading, object }) {
       ) : (
         // background
         <div
-          class={styles.character_profile}
+          class={`${styles.character_profile} ${styles.box_shadow}`}
           style={{ backgroundImage: `url("assets/images/purchase_bg.jpg")` }}
         >
           <div
