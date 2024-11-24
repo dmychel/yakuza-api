@@ -1,6 +1,6 @@
 <h1 align="center">Yakuza API</h1>
-<p align="center">A restFUL API serving data from the Yakuza Series</p>
-<a href="https://yakuza-api.netlify.app/" align="center">Live Page</a>
+<p align="center">A restFUL API serving data from the Yakuza Series <br/><a align="center" href="https://yakuza-api.netlify.app/" target="_blank">Live Page</a></p>
+
 
 ## Overview
 This API's purpose is to serve character, location, and media assets to developers. The idea is to give Web Developers another free media asset resource to use for their passion projects.
@@ -12,7 +12,7 @@ character or location
 ``` 
 GET https://rest-api-jvtz.onrender.com/character/1 
 ```
-To get started, take a look at the <a href="https://yakuza-api.netlify.app">documentation</a>
+To get started, take a look at the <a href="https://yakuza-api.netlify.app" target="_blank">documentation</a>
 
 ## Copyright
 
