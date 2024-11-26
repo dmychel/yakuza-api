@@ -51,13 +51,31 @@ export default function Index() {
               <div className={`${styles.transition} ${styles.hover_content}`}>
                 <h2>API Demo</h2>
               </div>
-              <img src="/assets/images/demo-back.png" alt="" />
+              <img
+                src="/assets/images/demo-back.png"
+                alt=""
+                className={styles.desktop_back}
+              />
+              <img
+                src="/assets/images/mobile-demo-back.png"
+                alt=""
+                className={styles.mobile_back}
+              />
             </Link>
             <Link to="my-revelations" class={styles.demo_card}>
               <div className={`${styles.transition} ${styles.hover_content}`}>
                 <h2>My Revelations</h2>
               </div>
-              <img src="/assets/images/revelations-back.png" alt="" />
+              <img
+                src="/assets/images/revelations-back.png"
+                alt=""
+                className={styles.desktop_back}
+              />
+              <img
+                src="/assets/images/mobile-revelations-back.png"
+                alt=""
+                className={styles.mobile_back}
+              />
             </Link>
           </div>
         </div>
