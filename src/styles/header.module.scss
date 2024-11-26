@@ -4,14 +4,16 @@ header {
   position: sticky;
   background-size: cover;
   background-position: 100% 69%;
+
   ul {
     color: white;
     display: flex;
     justify-content: space-around;
-    padding: 1rem;
+    padding: 0.25rem;
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
+
   a {
     color: white;
     text-decoration: none;
@@ -28,6 +30,7 @@ header {
   display: none;
   height: auto;
 }
+
 @media screen and (max-width: 600px) {
   .mobile {
     display: block;

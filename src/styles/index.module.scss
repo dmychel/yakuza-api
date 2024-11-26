@@ -1,4 +1,5 @@
 @import "app";
+
 .intro {
   line-height: 200%;
   .CTA {
@@ -49,6 +50,17 @@
         width: 100%;
         height: 100%;
         z-index: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .intro {
+    line-height: 150%;
+    .CTA {
+      .demo_card {
+        height: 600px;
       }
     }
   }
