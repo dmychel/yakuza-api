@@ -17,6 +17,11 @@
       justify-content: center;
       height: 300px;
       width: 550px;
+      color: white;
+
+      .mobile_back {
+        display: none;
+      }
 
       .hover_content {
         opacity: 0;
@@ -61,6 +66,14 @@
     .CTA {
       .demo_card {
         height: 600px;
+
+        .mobile_back {
+          display: block;
+        }
+
+        .desktop_back {
+          display: none;
+        }
       }
     }
   }
