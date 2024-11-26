@@ -6,9 +6,6 @@ footer {
   align-items: center;
   padding: 0.5rem;
   gap: 2em;
-
-  flex-shrink: 0;
-
   color: white;
   img {
     width: 40px;
@@ -17,5 +14,12 @@ footer {
 
   img:hover {
     transform: scale(1.1);
+  }
+}
+
+@media screen and (max-width: 715px) {
+  footer {
+    flex-direction: column;
+    gap: 0.5em;
   }
 }

@@ -1,4 +1,5 @@
 @import "app";
+
 .intro {
   line-height: 200%;
   .CTA {
@@ -16,6 +17,11 @@
       justify-content: center;
       height: 300px;
       width: 550px;
+      color: white;
+
+      .mobile_back {
+        display: none;
+      }
 
       .hover_content {
         opacity: 0;
@@ -49,6 +55,25 @@
         width: 100%;
         height: 100%;
         z-index: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .intro {
+    line-height: 150%;
+    .CTA {
+      .demo_card {
+        height: 600px;
+
+        .mobile_back {
+          display: block;
+        }
+
+        .desktop_back {
+          display: none;
+        }
       }
     }
   }

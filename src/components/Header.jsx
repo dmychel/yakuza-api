@@ -8,7 +8,7 @@ export default function Header() {
 
   return (
     <header style={{ backgroundImage: `url(${background})` }}>
-      <nav class={styles.desktop}>
+      <nav className={styles.desktop}>
         <ul>
           <li>
             <Link to="/">Home</Link>

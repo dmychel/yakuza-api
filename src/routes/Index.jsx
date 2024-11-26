@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 export default function Index() {
   return (
-    <div class={styles.home_wrapper}>
-      <div class={styles.home_background}>
+    <div className={styles.home_wrapper}>
+      <div className={styles.home_background}>
         <img src="assets/images/kiryu-disco.jpg" />
       </div>
-      <div class={styles.home}>
-        <div class={styles.intro}>
+      <div className={styles.home}>
+        <div className={styles.intro}>
           <h1 style={{ fontFamily: "Yakuza" }}>
             Yakuza <span style={{ color: "rgb(143, 0, 0)" }}>API</span>
           </h1>
@@ -40,24 +40,42 @@ export default function Index() {
           <br />
           <p>
             Below you can choose between a interactive demo of the API. Or my
-            personal favorite, a small recreation of Kiryu's '
+            personal favorite, a small recreation of Kiryu&apos;s &apos;
             <span style={{ color: "rgb(143, 0, 0)", fontFamily: "Yakuza" }}>
               My Revelations
             </span>
-            ' {":)"}.
+            &apos;{":)"}.
           </p>
-          <div class={styles.CTA}>
+          <div className={styles.CTA}>
             <Link to="demo" class={styles.demo_card}>
-              <div class={`${styles.transition} ${styles.hover_content}`}>
+              <div className={`${styles.transition} ${styles.hover_content}`}>
                 <h2>API Demo</h2>
               </div>
-              <img src="/assets/images/demo-back.png" alt="" />
+              <img
+                src="/assets/images/demo-back.png"
+                alt=""
+                className={styles.desktop_back}
+              />
+              <img
+                src="/assets/images/mobile-demo-back.png"
+                alt=""
+                className={styles.mobile_back}
+              />
             </Link>
             <Link to="my-revelations" class={styles.demo_card}>
-              <div class={`${styles.transition} ${styles.hover_content}`}>
+              <div className={`${styles.transition} ${styles.hover_content}`}>
                 <h2>My Revelations</h2>
               </div>
-              <img src="/assets/images/revelations-back.png" alt="" />
+              <img
+                src="/assets/images/revelations-back.png"
+                alt=""
+                className={styles.desktop_back}
+              />
+              <img
+                src="/assets/images/mobile-revelations-back.png"
+                alt=""
+                className={styles.mobile_back}
+              />
             </Link>
           </div>
         </div>
