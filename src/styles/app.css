@@ -86,3 +86,23 @@ a:hover {
 .box_shadow {
   box-shadow: #dc143c 0 20px 30px -10px;
 }
+
+@media screen and (max-width: 715px) {
+  .home,
+  .demo,
+  .error,
+  .doc,
+  .about,
+  .roadmap {
+    padding: 1rem;
+  }
+
+  .home_background img,
+  .demo_background img,
+  .error_background img,
+  .doc_background img,
+  .about_background img,
+  .roadmap_background img {
+    filter: blur(4px);
+  }
+}
