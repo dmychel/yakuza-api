@@ -18,8 +18,13 @@
 }
 
 @media screen and (max-width: 715px) {
+<<<<<<< HEAD
   .footer {
     flex-direction: column;
+=======
+  footer {
+    flex-direction: column ! important;
+>>>>>>> de290ba393b33978d37ec286b5973175533596f8
     gap: 0.5em;
   }
 }
