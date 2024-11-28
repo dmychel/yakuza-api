@@ -1,4 +1,4 @@
-footer {
+.footer {
   background-size: cover;
   background-position: 69%;
   display: flex;
@@ -18,7 +18,7 @@ footer {
 }
 
 @media screen and (max-width: 715px) {
-  footer {
+  .footer {
     flex-direction: column;
     gap: 0.5em;
   }
